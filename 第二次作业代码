@@ -1,0 +1,13 @@
+#第二次作业
+from turtle import *
+title("螺旋图")
+setup(800,800,100,100)
+bgcolor("black")
+pensize(3)
+colors = ["blue","yellow","red","purple","green","orange"]
+for i in range(360):
+    pencolor(colors[i%6])
+    fd(1.3*i)
+    speed(10)
+    left(61)
+done()    
